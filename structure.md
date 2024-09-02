@@ -20,6 +20,8 @@ DeepContext-LSP/
 │       ├── documentation.lua
 │       └── tts.lua
 ├── doppelganger/
+│   ├── requirements.txt 
+│   ├── env/
 │   ├── shadow/
 │   │   ├── lsp.py
 │   │   ├── autocompletion.py
@@ -40,7 +42,6 @@ DeepContext-LSP/
 ├── scripts/
 │   ├── install_dependencies.sh
 │   ├── setup_neovim.sh
-│   └── start_server.sh
 ├── docs/
 │   ├── usage.md
 │   ├── configuration.md

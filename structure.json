@@ -45,6 +45,14 @@
       "type": "directory",
       "name": "doppelganger",
       "children": [
+				{
+					"type": "directory",
+					"name": "env"
+				},
+				{
+					"type": "file",
+					"name": "requirements.txt"
+				},
         {
           "type": "directory",
           "name": "shadow",
