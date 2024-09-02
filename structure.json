@@ -1,0 +1,188 @@
+{
+  "project": "DeepContext-LSP",
+  "structure": [
+    {
+      "type": "directory",
+      "name": "neovim",
+      "children": [
+        {
+          "type": "file",
+          "name": "init.lua"
+        },
+        {
+          "type": "directory",
+          "name": "lua",
+          "children": [
+            {
+              "type": "file",
+              "name": "lsp.lua"
+            },
+            {
+              "type": "file",
+              "name": "autocompletion.lua"
+            },
+            {
+              "type": "file",
+              "name": "refactoring.lua"
+            },
+            {
+              "type": "file",
+              "name": "optimization.lua"
+            },
+            {
+              "type": "file",
+              "name": "documentation.lua"
+            },
+            {
+              "type": "file",
+              "name": "tts.lua"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "doppelganger",
+      "children": [
+        {
+          "type": "directory",
+          "name": "shadow",
+          "children": [
+            {
+              "type": "file",
+              "name": "lsp.py"
+            },
+            {
+              "type": "file",
+              "name": "autocompletion.py"
+            },
+            {
+              "type": "file",
+              "name": "refactoring.py"
+            },
+            {
+              "type": "file",
+              "name": "optimization.py"
+            },
+            {
+              "type": "file",
+              "name": "documentation.py"
+            },
+            {
+              "type": "file",
+              "name": "tts.py"
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "pytest",
+          "children": [
+            {
+              "type": "directory",
+              "name": "test_shadow",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "test_lsp.py"
+                },
+                {
+                  "type": "file",
+                  "name": "test_autocompletion.py"
+                },
+                {
+                  "type": "file",
+                  "name": "test_refactoring.py"
+                },
+                {
+                  "type": "file",
+                  "name": "test_optimization.py"
+                },
+                {
+                  "type": "file",
+                  "name": "test_documentation.py"
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "test_server_requests",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "test_endpoints.py"
+                },
+                {
+                  "type": "file",
+                  "name": "test_performance.py"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "scripts",
+      "children": [
+        {
+          "type": "file",
+          "name": "install_dependencies.sh"
+        },
+        {
+          "type": "file",
+          "name": "setup_neovim.sh"
+        },
+        {
+          "type": "file",
+          "name": "start_server.sh"
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "docs",
+      "children": [
+        {
+          "type": "file",
+          "name": "usage.md"
+        },
+        {
+          "type": "file",
+          "name": "configuration.md"
+        },
+        {
+          "type": "file",
+          "name": "development.md"
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "env"
+    },
+    {
+      "type": "file",
+      "name": "README.md"
+    },
+    {
+      "type": "file",
+      "name": "LICENSE"
+    },
+    {
+      "type": "file",
+      "name": ".gitignore"
+    },
+    {
+      "type": "file",
+      "name": "structure.md"
+    },
+    {
+      "type": "file",
+      "name": "structure.json"
+    }
+  ]
+}
+

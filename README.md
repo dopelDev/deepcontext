@@ -96,7 +96,7 @@ end
 - **Automated Tests:** 
   Use the Python doppelganger script along with `pytest` to run automated tests and ensure the project's functionality and reliability, including TTS features.
 
-## Python Doppelganger and Pytest for TTS
+## Python Doppelganger script replicate features
 
 The Python doppelganger script also includes TTS functionality using Python bindings for eSpeak or similar libraries. Pytest is used to test this feature, ensuring consistency between the Lua and Python implementations.
 
