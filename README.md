@@ -96,20 +96,11 @@ end
 - **Automated Tests:** 
   Use the Python doppelganger script along with `pytest` to run automated tests and ensure the project's functionality and reliability, including TTS features.
 
-## Python Doppelganger script replicate features
+## Python Doppelganger Script
 
-The Python doppelganger script also includes TTS functionality using Python bindings for eSpeak or similar libraries. Pytest is used to test this feature, ensuring consistency between the Lua and Python implementations.
-
-Example test case for TTS in Python:
-
-```python
-import os
-
-def test_tts():
-    text = "Hello, this is a test."
-    os.system(f"espeak \"{text}\"")
-    # Add assertions or checks to verify TTS functionality
-```
+The Python doppelganger script is designed to create a shadow script to replica Script that mimics specific features of a target script or application.
+It uses Test Driven Development (TDD) methodologies to ensure that all functionalities are accurately replicated and tested.
+The Script integrates with the Pytest module for automated testing, ensuring robust validation of all replicated features.
 
 ## Future Improvements
 
