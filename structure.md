@@ -31,7 +31,8 @@ DeepContext-LSP/
 │       │   ├── test_refactoring.py
 │       │   ├── test_optimization.py
 │       │   └── test_documentation.py
-│       └── test_server_requests/
+│       └── test_integration/
+│           ├── test_remote_endpoints.py
 │           ├── test_endpoints.py
 │           └── test_performance.py
 ├── scripts/
