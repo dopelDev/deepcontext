@@ -1,9 +1,4 @@
-# Estructura del Proyecto DeepContext-LSP
-
-```plaintext
-# Proyecto DeepContext-LSP
-
-## Estructura de directorios
+# deepContext Structure 
 
 ```plaintext
 DeepContext-LSP/
@@ -42,11 +37,10 @@ DeepContext-LSP/
 ├── scripts/
 │   ├── install_dependencies.sh
 │   ├── setup_neovim.sh
-├── docs/
-│   ├── usage.md
-│   ├── configuration.md
-│   └── development.md
-└── env/
+└─ docs/
+    ├── usage.md
+    ├── configuration.md
+    └── development.md
 ```
 
 ```plaintext
