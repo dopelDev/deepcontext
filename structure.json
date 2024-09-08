@@ -19,6 +19,10 @@
             },
             {
               "type": "file",
+              "name": "preloading.lua"
+            },
+            {
+              "type": "file",
               "name": "autocompletion.lua"
             },
             {
@@ -61,6 +65,10 @@
               "type": "file",
               "name": "lsp.py"
             },
+	          {
+              "type": "file",
+              "name": "preloading.py"
+            },
             {
               "type": "file",
               "name": "autocompletion.py"
@@ -95,6 +103,10 @@
                   "type": "file",
                   "name": "test_lsp.py"
                 },
+								{
+									"type": "file",
+                  "name": "test_preloading.py"
+								},
                 {
                   "type": "file",
                   "name": "test_autocompletion.py"
