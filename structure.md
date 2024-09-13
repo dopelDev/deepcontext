@@ -1,4 +1,4 @@
-# deepContext Structure 
+# deepContext Structure
 
 ```plaintext
 DeepContext-LSP/
@@ -16,6 +16,7 @@ DeepContext-LSP/
 │       └── tts.lua
 ├── doppelganger/
 │   ├── requirements.txt 
+│   ├── server_config.env 
 │   ├── env/
 │   ├── shadow/
 │   │   ├── lsp.py
@@ -44,11 +45,9 @@ DeepContext-LSP/
     └── development.md
 ```
 
-```plaintext
 - neovim: Configuraciones y scripts relacionados con la configuración de Neovim.
   - init.lua: Archivo de configuración principal para Neovim.
   - lua: Directorio que contiene módulos específicos de Lua para funcionalidades como autocompletado, refactorización, optimización, documentación, y texto a voz (TTS).
-
 
 - doppelganger: Contiene scripts y herramientas para el análisis y verificación del código.
   - shadow: Implementaciones en Python para diferentes funcionalidades del servidor LSP.
@@ -72,7 +71,12 @@ DeepContext-LSP/
 
 - LICENSE: Archivo de licencia del proyecto que especifica los términos bajo los cuales se distribuye el software.
 
-- README.md: Archivo de documentación principal que proporciona una descripción general del proyecto. 
+- README.md: Archivo de documentación principal que proporciona una descripción general del proyecto.
 
 - .gitignore: Lista de archivos y directorios que deben ser ignorados por Git.
 
+**update:**
+Thursday 12 Sep
+
+**server_config.env**:
+_Para facilitar la configuracion del server y los models_
