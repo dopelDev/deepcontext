@@ -7,7 +7,7 @@ Functions:
     check_environment_file(filepath: str) -> bool:
         Verifies if the environment file exists and
            checks if the necessary values are set
-           correctly
+           correctly.
         Args:
             filepath (str): The path of the environment file
         Returns:
@@ -42,3 +42,31 @@ Functions:
             ValueError: If the model list is empty or invalid
             PartialModelLoadError: If only some models are loaded
 '''
+
+def check_environment_file():
+    pass
+def check_ollama_server():
+    pass
+def check_models_loaded():
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

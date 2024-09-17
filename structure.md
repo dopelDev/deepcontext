@@ -33,8 +33,8 @@ DeepContext-LSP/
 │       │   ├── test_optimization.py
 │       │   └── test_documentation.py
 │       └── test_integration/
-│           ├── test_remote_endpoints.py
-│           ├── test_endpoints.py
+│           ├── check_ollama_server.py
+│           ├── test_check_ollama_server.py
 │           └── test_performance.py
 ├── scripts/
 │   ├── install_dependencies.sh

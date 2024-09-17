@@ -19,10 +19,6 @@
             },
             {
               "type": "file",
-              "name": "preloading.lua"
-            },
-            {
-              "type": "file",
               "name": "autocompletion.lua"
             },
             {
@@ -49,14 +45,18 @@
       "type": "directory",
       "name": "doppelganger",
       "children": [
-				{
-					"type": "directory",
-					"name": "env"
-				},
-				{
-					"type": "file",
-					"name": "requirements.txt"
-				},
+        {
+          "type": "file",
+          "name": "requirements.txt"
+        },
+        {
+          "type": "file",
+          "name": "server_config.env"
+        },
+        {
+          "type": "directory",
+          "name": "env"
+        },
         {
           "type": "directory",
           "name": "shadow",
@@ -64,10 +64,6 @@
             {
               "type": "file",
               "name": "lsp.py"
-            },
-	          {
-              "type": "file",
-              "name": "preloading.py"
             },
             {
               "type": "file",
@@ -103,10 +99,6 @@
                   "type": "file",
                   "name": "test_lsp.py"
                 },
-								{
-									"type": "file",
-                  "name": "test_preloading.py"
-								},
                 {
                   "type": "file",
                   "name": "test_autocompletion.py"
@@ -127,11 +119,15 @@
             },
             {
               "type": "directory",
-              "name": "test_server_requests",
+              "name": "test_integration",
               "children": [
                 {
                   "type": "file",
-                  "name": "test_endpoints.py"
+                  "name": "check_ollama_server.py"
+                },
+                {
+                  "type": "file",
+                  "name": "test_check_ollama_server.py"
                 },
                 {
                   "type": "file",
@@ -154,10 +150,6 @@
         {
           "type": "file",
           "name": "setup_neovim.sh"
-        },
-        {
-          "type": "file",
-          "name": "start_server.sh"
         }
       ]
     },
@@ -180,10 +172,6 @@
       ]
     },
     {
-      "type": "directory",
-      "name": "env"
-    },
-    {
       "type": "file",
       "name": "README.md"
     },
@@ -194,15 +182,6 @@
     {
       "type": "file",
       "name": ".gitignore"
-    },
-    {
-      "type": "file",
-      "name": "structure.md"
-    },
-    {
-      "type": "file",
-      "name": "structure.json"
     }
   ]
 }
-
