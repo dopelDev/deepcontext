@@ -56,11 +56,6 @@ DeepContext LSP is designed to work efficiently in secure local networks without
 - **Processing Modes:** 
   Adjust between QUICK and DEEP processing levels based on project needs.
 
-## Testing and Quality
-
-- **Automated Tests:** 
-  Use the Python doppelganger script with `pytest` to run automated tests, ensuring functionality and reliability.
-
 ## Contributing
 
 Contributions are welcome! Please submit issues or pull requests to improve **DeepContext LSP**.
