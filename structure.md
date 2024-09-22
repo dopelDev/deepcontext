@@ -1,48 +1,50 @@
 # deepContext Structure
 
 ```plaintext
-DeepContext-LSP/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── neovim/
-│   ├── init.lua
-│   └── lua/
-│       ├── lsp.lua
-│       ├── autocompletion.lua
-│       ├── refactoring.lua
-│       ├── optimization.lua
-│       ├── documentation.lua
-│       └── tts.lua
-├── doppelganger/
-│   ├── requirements.txt 
-│   ├── server_config.env 
-│   ├── env/
-│   ├── shadow/
-│   │   ├── lsp.py
-│   │   ├── autocompletion.py
-│   │   ├── refactoring.py
-│   │   ├── optimization.py
-│   │   ├── documentation.py
-│   │   └── tts.py
-│   └── pytest/
-│       ├── test_shadow/
-│       │   ├── test_lsp.py
-│       │   ├── test_autocompletion.py
-│       │   ├── test_refactoring.py
-│       │   ├── test_optimization.py
-│       │   └── test_documentation.py
-│       └── test_integration/
-│           ├── check_ollama_server.py
-│           ├── test_check_ollama_server.py
-│           └── test_performance.py
-├── scripts/
-│   ├── install_dependencies.sh
-│   ├── setup_neovim.sh
-└─ docs/
-    ├── usage.md
-    ├── configuration.md
-    └── development.md
+deepcontext_lsp/
+├── __init__.py                       # Inicializa el módulo DeepContext y ejecuta los tests de integración
+├── .gitignore                        # Files Blacklist 
+├── features/                         # Módulo que agrupa las funcionalidades LSP
+│   ├── __init__.py                   # Inicializa el módulo de funcionalidades
+│   ├── completion.py                 # Autocompletado (textDocument/completion)
+│   ├── hover.py                      # Hover (textDocument/hover)
+│   ├── definition.py                 # Definición (textDocument/definition)
+│   ├── references.py                 # Referencias (textDocument/references)
+│   ├── rename.py                     # Renombrar (textDocument/rename)
+│   ├── signature_help.py             # Ayuda de Signaturas (textDocument/signatureHelp)
+│   ├── diagnostics.py                # Diagnósticos (textDocument/publishDiagnostics)
+│   ├── formatting.py                 # Formato de código (textDocument/formatting)
+│   ├── code_action.py                # Code Actions (textDocument/codeAction)
+│   ├── code_lens.py                  # Code Lens (textDocument/codeLens)
+│   ├── workspace_symbol.py           # Símbolos del Espacio de Trabajo (workspace/symbol)
+│   └── semantic_tokens.py            # Tokens Semánticos (textDocument/semanticTokens)
+├── tests/                            # Carpeta para las pruebas de PyTest
+│   ├── __init__.py                   # Inicializa el paquete de pruebas
+│   ├── test_completion.py            # PyTest para Autocompletado
+│   ├── test_hover.py                 # PyTest para Hover
+│   ├── test_definition.py            # PyTest para Definición
+│   ├── test_references.py            # PyTest para Referencias
+│   ├── test_rename.py                # PyTest para Renombrar
+│   ├── test_signature_help.py        # PyTest para Ayuda de Signaturas
+│   ├── test_diagnostics.py           # PyTest para Diagnósticos
+│   ├── test_formatting.py            # PyTest para Formato de Código
+│   ├── test_code_action.py           # PyTest para Code Actions
+│   ├── test_code_lens.py             # PyTest para Code Lens
+│   ├── test_workspace_symbol.py      # PyTest para Símbolos del Espacio de Trabajo
+│   └── test_semantic_tokens.py       # PyTest para Tokens Semánticos
+├── ollama/                           # Módulo para las interacciones con Ollama
+│   ├── __init__.py                   # Inicializa el módulo Ollama
+│   ├── ollama_client.py              # Cliente para hacer llamadas al servidor de Ollama
+│   ├── integration_test.py           # Test de integración para verificar el servidor Ollama
+│   └── ollama.env                    # Configuración de entorno del servidor Ollama
+├── docs/                             # Documentación adicional
+│   ├── usage.md                      # Instrucciones de uso del proyecto
+│   ├── configuration.md              # Detalles de configuración del proyecto
+│   ├── development.md                # Guía de desarrollo para colaboradores
+│   ├── LICENSE.md                    # Licencia del proyecto
+│   ├── README.md                     # Resumen y visión general del proyecto
+│   ├── structure.md                  # Estructura de carpetas y archivos en formato Markdown
+│   └── structure.json                # Estructura de carpetas y archivos en formato JSON
 ```
 
 - neovim: Configuraciones y scripts relacionados con la configuración de Neovim.
@@ -75,8 +77,16 @@ DeepContext-LSP/
 
 - .gitignore: Lista de archivos y directorios que deben ser ignorados por Git.
 
-**update:**
+**UPDATE:**
 Thursday 12 Sep
 
 **server_config.env**:
 _Para facilitar la configuracion del server y los models_
+
+**UPDATE**
+Sunday 22 September
+**Restructuracion General**
+
+_REMOVE_:
+* Infraestructura de Lua
+* TTS Features
