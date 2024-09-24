@@ -1,3 +1,4 @@
+# integration_test.py
 '''
 This script tests the configuration of the environment file,
 the availability of the Ollama server, and the models
@@ -49,24 +50,3 @@ def check_ollama_server():
     pass
 def check_models_loaded():
     pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
